@@ -27,7 +27,9 @@ public class Game extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         
         board1.setScoreInterface(scoreBoard1);
+        
         pack();
+        
     }
 
     /**

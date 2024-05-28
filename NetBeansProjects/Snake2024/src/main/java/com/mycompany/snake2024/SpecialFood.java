@@ -30,7 +30,7 @@ public class SpecialFood extends Food {
             despawnTimer.stop();
         }
         
-        despawnTimer = new Timer(ConfigData.getInstance().getDeltaTime(), new ActionListener() {
+        despawnTimer = new Timer(ConfigData.getInstance().getDeltaTime() * 2, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 tick();

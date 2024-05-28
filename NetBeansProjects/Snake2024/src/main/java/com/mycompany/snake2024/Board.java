@@ -175,7 +175,7 @@ public class Board extends javax.swing.JPanel {
             timer.stop();
         }
 
-        timer = new Timer(ConfigData.getInstance().getDeltaTime(), new ActionListener() {
+        timer = new Timer( ConfigData.getInstance().getDeltaTime(), new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -194,7 +194,7 @@ public class Board extends javax.swing.JPanel {
         if(iaTimer != null && timer.isRunning()){
             timer.stop();
         }
-        iaTimer = new Timer(ConfigData.getInstance().getDeltaTime(), new ActionListener() {
+        iaTimer = new Timer((int) (ConfigData.getInstance().getDeltaTime()*1.3), new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -208,12 +208,15 @@ public class Board extends javax.swing.JPanel {
         iaTimer.start();
     }
 
+    /* getter of the width of the square*/
+    
     public int getSQUARE_WIDTH() {
         
         return getWidth() / ConfigData.getInstance().getNumCols();
         
     }
 
+    /* getter of the height of the square*/
     public int getSQUARE_HEIGTH() {
         
         return getHeight() / ConfigData.getInstance().getNumRows();

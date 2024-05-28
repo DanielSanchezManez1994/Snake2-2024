@@ -341,6 +341,8 @@ public class SnakeIA extends Snake {
         }
     }
     
+    /* Advanved IA brain*/
+    
     private void checkDirectionUpgrade(Direction direction, Snake snake){
         
     }

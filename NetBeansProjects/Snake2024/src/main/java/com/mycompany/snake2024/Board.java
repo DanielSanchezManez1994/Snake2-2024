@@ -194,7 +194,7 @@ public class Board extends javax.swing.JPanel {
         if(iaTimer != null && timer.isRunning()){
             timer.stop();
         }
-        iaTimer = new Timer((int) (ConfigData.getInstance().getDeltaTime()*1.4), new ActionListener() {
+        iaTimer = new Timer((int) (ConfigData.getInstance().getDeltaTime()*1.5), new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent ae) {
